@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 28222852,
+      "firstName": "Cornelius",
+      "lastName": "Howell",
+      "email": "Vesta.Jaskolski@hotmail.com"
+    },
+    {
+      "id": 26803086,
+      "firstName": "Luella",
+      "lastName": "Reichel",
+      "email": "Lorenz22@gmail.com"
+    },
+    {
+      "id": 50550503,
+      "firstName": "Karl",
+      "lastName": "Witting",
+      "email": "Alphonso.MacGyver@hotmail.com"
+    },
+    {
+      "id": 94306870,
+      "firstName": "Zelda",
+      "lastName": "Gusikowski",
+      "email": "Evan77@hotmail.com"
+    }
+  ]
+}
