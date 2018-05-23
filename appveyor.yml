@@ -1,18 +1,20 @@
-# Test against the latest version of this Node.js version
 environment:
-  nodejs_version: "6"
-
-# Install scripts. (runs after repo cloning)
+  matrix:
+    - nodejs_version: '10'
+    - nodejs_version: '8'
+    - nodejs_version: '6'
 install:
-  # Get the latest stable version of Node.js or io.js
   - ps: Install-Product node $env:nodejs_version
-  # install modules
+  - npm install --global npm@latest
+  - set PATH=%APPDATA%\npm;%PATH%
   - npm install
-
-# Post-install test scripts.
+matrix:
+  fast_finish: true
+build: off
+shallow_clone: true
 test_script:
-  # Output useful info for debugging.
   - node --version
   - npm --version
-  # run tests
   - npm test
+cache:
+  - '%APPDATA%\npm-cache'
